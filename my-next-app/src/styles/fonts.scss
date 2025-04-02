@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Futura PT';
+  src: url('/fonts/FuturaPT-Book.eot');
+  src: local('Futura PT Book'), local('FuturaPT-Book'),
+       url('/fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/FuturaPT-Book.woff2') format('woff2'),
+       url('/fonts/FuturaPT-Book.woff') format('woff'),
+       url('/fonts/FuturaPT-Book.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Futura PT Medium';
+  src: url('/fonts/FuturaPT-Medium.eot');
+  src: local('Futura PT Medium'), local('FuturaPT-Medium'),
+       url('/fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/FuturaPT-Medium.woff2') format('woff2'),
+       url('/fonts/FuturaPT-Medium.woff') format('woff'),
+       url('/fonts/FuturaPT-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: auto;
+}

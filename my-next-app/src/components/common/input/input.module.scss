@@ -1,0 +1,30 @@
+.custom-select-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+
+  .required {
+    color: red;
+  }
+
+  &.error-border {
+    textarea,
+    input,
+    .ant-input-textarea .ant-input {
+      border: 2px solid red !important;
+      box-shadow: 0 0 5px rgba(255, 0, 0, 0.5) !important;
+    }
+  }
+
+  .error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+}

@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import "./fonts.scss";
+
+$primary-color: #c02222;
+$secondary-color: #000;
+$dark_gray: #4f4f4e;
+$light_gray: #f2f2f2;
+$border_light: rgb(204 204 204 / 50%);
+$shadow-color: rgb(0 0 0 / 10%);
+$white: #fff;
+$light_primary: rgb(192 34 34 / 10%);
+$opensans: "Open Sans";
+$transparent: transparent;
+$input_border_color: rgba(0, 0, 0, 0.87);
+$card_shadow: rgb(78 78 78 / 20%);
+$primary_thin_light: rgb(192 34 34 / 80%);
+$pendig_color: #cc5500;
+$pendig_color_bg: rgb(204 85 0 / 10%);
+$passed_color: #528aee;
+$passed_color_bg: rgb(82 138 238 / 10%);
+$failed_color_bg: rgb(203 0 0 / 10%);
+$failed_color: #cb0000;
+$active_color_bg: rgb(8 144 0 / 10%);
+$active_color: #089000;
+$completed_color_bg: rgb(79 79 78 / 10%);
+$completed_color: #4f4f4e;
+$poppins: "Poppins";
+$input_label: rgba(0, 0, 0, 0.6);
+$futura: "futura pt";
+$popup_light_gray: #666666;
+$categories_card: rgb(0 0 0 / 8%);
+$text_color: #6f6f6e;
+$profile_text: #888888;
+
+// Colors
+$primary-color: #ffa337;
+$secondary-color: #0098db;
+$background-color: #f9f9f9;
+$border-color: #eaeaea;
+$text-color: #363636;
+
+// Fonts
+$font-family-body: "Open Sans", sans-serif;
+$font-family-heading: "Montserrat", sans-serif;
+
+// Breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+
+// Sizes
+$padding-small: 8px;
+$padding-medium: 16px;
+$padding-large: 24px;
+
+$margin-small: 8px;
+$margin-medium: 16px;
+$margin-large: 24px;
+
+$header-height: 80px;
+$footer-height: 150px;
+
+// Mixins Start
+@mixin h1 {
+  font-size: 26px;
+  line-height: 40px;
+  text-align: center;
+  font-family: $futura !important;
+  font-weight: 600;
+
+  @media screen and (max-width: 767.98px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.h1 {
+  font-size: 30px;
+  line-height: 40px;
+  @media screen and (max-width: 767.98px) {
+    font-size: 20px;
+  }
+}
+
+.bold-font {
+  font-weight: 900;
+}
+
+.p {
+  font-size: 16px;
+
+  @media screen and (max-width: 767.98px) {
+    font-size: 14px;
+  }
+}
+
+@mixin h2 {
+  margin: 0;
+  font-family: $futura !important;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  @media screen and (max-width: 1399.98px) {
+    font-size: 22px;
+  }
+}
+
+@mixin h3 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: $futura !important;
+  @media screen and (max-width: 1399.98px) {
+    font-size: 20px;
+  }
+}
+
+@mixin h4 {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: $futura;
+  font-weight: 400;
+  margin: 0;
+  color: $secondary-color;
+
+  @media screen and (max-width: 1399.98px) {
+    font-size: 16px;
+  }
+}
+
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin text-left {
+  text-align: left;
+}
+
+// h1, p, span, a, input{
+//   font-family: 'Open Sans';
+// }
+
+@mixin flex-align-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin Custom-button-1 {
+  height: 50px !important;
+  width: 160px !important;
+}

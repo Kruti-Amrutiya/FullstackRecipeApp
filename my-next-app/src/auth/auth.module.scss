@@ -1,0 +1,210 @@
+// 🔷 Overlay for modal background
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+// 🔷 Modal (popup) container
+.authModal {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+// 🔷 Close button (X)
+.closeButton {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.closeButton:hover {
+  color: #000;
+}
+
+// 🔷 Modal title (Login/Register)
+.authTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+// 🔷 Input fields
+.input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem; 
+}
+
+// 🔷 Primary Button (Login/Register)
+.primaryButton {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.loginButton {
+  background-color: #778b8f;
+  color: white;
+  margin-top: 5px;
+}
+
+.loginButton:hover {
+  background-color: #505b61;
+}
+
+.registerButton {
+  background-color: #778b8f;
+  color: white;
+  margin-top: 5px;
+}
+
+.registerButton:hover {
+  background-color: #505b61;
+}
+
+// 🔷 Cancel Button
+.cancelButton {
+  width: 100%;
+  padding: 10px;
+  background: #e57373;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.cancelButton:hover {
+  background: #d32f2f;
+}
+
+// 🔷 Navbar Styling
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #2c3e50;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+// 🔷 Logo (Left Side)
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+// 🔷 Navbar Buttons (Right Side)
+.navbarButtons {
+  display: flex;
+  gap: 12px;
+  margin-left: auto; // Push buttons to the right
+}
+
+// 🔷 Updated Buttons for Navbar
+.navButton {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.navLogin {
+  background-color: #c47777;
+  color: white;
+}
+
+.navLogin:hover {
+  background-color: #e63946;
+}
+
+.navRegister {
+  background-color: #84b1b9;
+  color: white;
+}
+
+.navRegister:hover {
+  background-color: #0077b6;
+}
+
+.navLogout {
+  background-color: #a38686;
+  color: white;
+}
+
+.navLogout:hover {
+  background-color: #774c4c;
+}
+
+// 🔷 Fade-in animation
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.passwordContainer {
+  position: relative;
+  width: 100%;
+}
+
+.eyeIcon {
+  font-size: 1.2rem;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.eyeIcon:hover {
+  color: #000;
+}
+
+.userEmail {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 15px;
+  flex: auto;
+}

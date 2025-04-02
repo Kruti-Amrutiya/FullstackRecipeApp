@@ -1,0 +1,97 @@
+.file-upload-width {
+  width: calc(100% - 50px);
+}
+
+.ant-upload {
+  .ant-btn {
+    &.btn-orange {
+      color: white;
+
+      &[disabled] {
+        color: hsl(0, 0%, 60%);
+      }
+    }
+    &:has(button.focused-shadow) {
+      box-shadow: none;
+    }
+  }
+  &.ant-picker:hover {
+    box-shadow: 0px 0px 10px 0px rgba(209, 209, 209, 1);
+    border-color: #d9d9d9;
+  }
+}
+
+.ant-btn {
+  &.btn-cancel {
+    background-color: transparent;
+  }
+
+  &.white-border {
+    &:disabled {
+      opacity: 0.65;
+      color: rgba(0, 0, 0, 0.25);
+      border-color: #d9d9d9;
+      background-color: #f5f5f5;
+    }
+  }
+}
+
+table {
+  tr {
+    td {
+      .ant-upload-list {
+        .ant-upload-list-item {
+          height: auto;
+        }
+
+        .ant-upload-list-item-name {
+          white-space: normal;
+          line-height: 1.5;
+          text-overflow: initial;
+        }
+      }
+      &.upload-video-title-width {
+        // .ant-upload-list-item {
+        //   margin-top: 0;
+        // }
+        .ant-upload-list-item-name {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+span {
+  &:has(.transation-listing-import) {
+    margin-left: 0;
+  }
+}
+
+.file_upload {
+  &.transation-listing-import {
+    margin-left: 0;
+  }
+}
+
+span {
+  &:has(.transation-listing-import) {
+    margin-left: 0;
+  }
+}
+
+.custom-select-box {
+  &.error-border-range {
+    div {
+      button {
+        border-color: red;
+      }
+    }
+  }
+}
+
+.upload-download {
+  .custom-select-box {
+    width: 100%;
+  }
+}

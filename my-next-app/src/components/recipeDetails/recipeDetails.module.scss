@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+
+.container {
+  max-width: 1092px;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+
+.back {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+  border: 1px solid #363636;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
